@@ -13,34 +13,41 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="container jumbotron my-5 py-2 text-light bg-dark">
-      <form id="contact-form" method="post" action="form.php">
-        <div class="mb-3">
-          Enter your Name
-          <input
-            name="name"
-            type="text"
-            class="form-control"
-            placeholder="Your Name"
-            required
-          />
-          Enter your Email Address
-          <input
-            name="email"
-            type="email"
-            class="form-control"
-            placeholder="name@example.com"
-            required
-          />Message
-          <textarea name="message" class="form-control" rows="3"></textarea>
-        <input
-          type="submit"
-          class="btn btn-primary submit mt-3"
-          value="SEND MESSAGE"
-        />
-      </form>
+    <div class="contact-title">
+      <h1>Say Hello</h1>
+      <h2>We are always ready to serve you!</h2>
     </div>
 
+    <div class="contact-form">
+      <form id="contact-form" method="post" action="form.php">
+        <input
+          name="name"
+          type="text"
+          class="form-control"
+          placeholder="Your Name"
+          required
+        />
+        <br />
+        <input
+          name="email"
+          type="email"
+          class="form-control"
+          placeholder="Your Email"
+          required
+        />
+        <br />
+
+        <textarea
+          name="message"
+          class="form-control"
+          placeholder="Message"
+          rows="4"
+        ></textarea
+        ><br />
+
+        <input type="submit" class="form-control submit" value="SEND MESSAGE" />
+      </form>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
