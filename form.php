@@ -12,7 +12,8 @@ $email_body = "User Name: $name.\n";
 $to = "pot.c04@gmail.com";
 $headers = "From: $email_from \r\n";
 $headers .= "Reply-To: $visitor_email \r\n";
-mail($to,$email_subject,$email_body)
+mail($to,$email_subject,$email_body,$headers);
+header("Location: index.html");
 
 
 
