@@ -14,29 +14,36 @@
   </head>
   <body>
     <div class="container jumbotron my-5 py-3 text-light bg-dark">
-        <form id="contact-form" method="post" action="form.php"></form>
-      <div class="mb-3">
+      <form id="contact-form" method="post" action="form.php">
+        <div class="mb-3">
           Enter your Name
-          <input name="name"
-          type="text" class="form-control" placeholder="Your Name" required>
-        <label for="exampleFormControlInput1" class="form-label"
-          >Enter your Email Address</label
-        >
-        <input
-        name="email"
-          type="email"
-          class="form-control"
-          placeholder="name@example.com"
-        />
-      </div>
-      <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label"
-          >Message</label
-        >
-        <textarea class="form-control" id="message" rows="3"></textarea>
-      </div>
-      <div class="pt-1">
-        <input type="submit" class="form-control submit" value="SEND MESSAGE">
+          <input
+            name="name"
+            type="text"
+            class="form-control"
+            placeholder="Your Name"
+            required
+          />
+          <label for="exampleFormControlInput1" class="form-label"
+            >Enter your Email Address</label
+          >
+          <input
+            name="email"
+            type="email"
+            class="form-control"
+            placeholder="name@example.com"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label"
+            >Message</label
+          >
+          <textarea class="form-control" id="message" rows="3"></textarea>
+        </div>
+        <div class="col-auto">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
     </div>
 
     <script
